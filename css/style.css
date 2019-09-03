@@ -19,15 +19,17 @@ height: auto;
 .container {
     width: 900px;
     margin: 0 auto;
+    font-size: 0px;
 }
 
 .site-navigation {
-    margin: 0;
     padding: 0;
     width: 900px;
-    margin: 0 auto;
-    padding: 77px 150px 100px 150px;
+    padding: 77px 0px 150px 0px;
     font-family: 'Playfair Display', serif;  
+    display: block;
+    text-align: center;
+    
 }
 
 .site-navigation a {
@@ -57,59 +59,76 @@ margin-right: 103px;
     margin-right: 95px;
 }
 
-.list-item {
+.list {
+    padding-bottom: 70px;
+    text-align: center;
+  }
+  
+  .list-item {
+    font-family: 'Playfair Display', serif;
+    list-style: none;
     margin: 0;
     padding: 0;
-    width: 420px;
-    display: inline-block;
-    list-style-type: none;
-    font-family: 'Playfair Display', serif;
-}
-
-.list-item h2 {
-    font-family: 'Ubuntu', sans-serif;
+    font-size: 0;
+    text-align: -webkit-auto;
+    margin-bottom: 53px;
+  }
+  
+  .item {
+   display: inline-block;
+    max-width: 420px;
     font-size: 14px;
-    opacity: 0.4;
-    margin-top: 32px;
-}
-
-
-.list-item h3 {
-    font-size: 30px;
-    opacity: 0.7;
-    margin-top: 25px;
-}
-
-.list-item p {
-    font-size: 14px; 
-    margin-top: 25px;
-    word-spacing: 5px; 
-}
-
-.list-item {
-    margin-right: 56px;
-    margin-bottom: 125px;
-}
-
-.list-item:nth-of-type(2n) {
+    margin: 0 60px 135px 0;
+  }
+  
+  .item:nth-child(2n) {
+    margin-left: auto;
     margin-right: 0;
-
-}
-
+  }
+  
+  .item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+  }
+  
+  .item img {
+    margin-bottom: 31px;
+  }
+  
+  .item span {
+    font-family: 'Ubuntu', sans-serif;
+    display:inline-block;
+    font-size: 14px;
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    margin-bottom: 31px;
+  }
+  
+  .item h2 {
+    font-size: 30px;
+    color: rgb(98, 98, 98);
+    margin-bottom: 36px;
+  }
+  
+  .item p {
+    font-size: 14px;
+    color: rgb(98, 98, 98);
+    line-height: 1.714;
+    text-align: left;
+  }
+  
+  
 button {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
-    margin-top: 57px;
-    margin-bottom: 70px;
-    margin-left: 357px;
     width: 164px;
     height: 60px;
     background-color: transparent;
     outline: none;
-    overflow: hidden;
     background-repeat: no-repeat;
     cursor: pointer;
     border: 1px solid black;
+    display: block;
+    margin: 0 auto;
 }
 
 button:hover {
